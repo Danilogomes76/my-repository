@@ -6,11 +6,13 @@ import Projects from "./components/ProjectsComponent/Projects";
 export default function Home() {
   return (
     <div className="flex justify-center">
-      <div className="w-[64rem] items-center p-5 lg:p-0 flex justify-center flex-col">
+      <div className="w-[64rem] items-center lg:p-0 flex justify-center flex-col">
         <Header />
-        <Apresentation />
-        <Message />
-        <Projects />
+        <section className="p-5 mt-5 lg:m-0">
+          <Apresentation />
+          <Message />
+          <Projects />
+        </section>
       </div>
     </div>
   );
