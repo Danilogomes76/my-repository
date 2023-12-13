@@ -32,7 +32,7 @@ const Apresentation: React.FC = () => {
           width={100}
           height={100}
           src={"/assets/Dots.png"}
-          className="absolute select-none top-[20%] left-[50%] transform translate-x-[-50%] lg:top-[20%] lg:left-auto lg:right-[15%]"
+          className="absolute select-none top-[20%] "
         ></Image>
 
         <Image
@@ -40,7 +40,7 @@ const Apresentation: React.FC = () => {
           width={100}
           height={100}
           src={"/assets/Style=Outline.svg"}
-          className="absolute select-none top-[60%] left-[50%] transform translate-x-[-50%] lg:top-[60%] lg:left-auto lg:right-[15%]"
+          className="absolute select-none top-[60%] left-[70%]"
         ></Image>
       </section>
     </section>

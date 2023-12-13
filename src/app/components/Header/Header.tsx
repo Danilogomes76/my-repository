@@ -14,7 +14,7 @@ const Header: React.FC = () => {
           #<span className="text-my_gray hover:text-my_white">Home</span>
         </li>
         <li className="text-primary cursor-default">
-          #<span className="text-my_gray hover:text-my_white">Sobre</span>
+          #<span className="text-my_gray hover:text-my_white">Projetos</span>
         </li>
         <li className="text-primary cursor-default">
           #
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           </span>
         </li>
         <li className="text-primary cursor-default">
-          #<span className="text-my_gray hover:text-my_white">Projetos</span>
+          #<span className="text-my_gray hover:text-my_white">Sobre</span>
         </li>
         <li className="text-primary cursor-default">
           #<span className="text-my_gray hover:text-my_white">Contato</span>
