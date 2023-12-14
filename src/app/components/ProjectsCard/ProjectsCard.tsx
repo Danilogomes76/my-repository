@@ -18,7 +18,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
   codeLink,
 }) => {
   return (
-    <section className="border max-w-[330px]  bg-bg_color border-my_gray">
+    <section className="border max-w-[20.625rem] h-[600px] flex flex-col  bg-bg_color border-my_gray">
       <Image
         alt="img"
         src={imgSrc}
@@ -27,7 +27,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
         className="border"
       />
       <p className="border border-my_gray text-my_gray">{technologies}</p>
-      <div className="border p-4 flex flex-col items-start gap-4">
+      <div className="border p-4 justify-around h-full flex flex-col items-start gap-4">
         <p className="text-2xl text-my_white">{projectTitle}</p>
         <p className="text-my_gray">{description}</p>
         <div className="flex gap-4">

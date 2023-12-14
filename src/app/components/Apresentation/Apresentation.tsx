@@ -14,7 +14,7 @@ const Apresentation: React.FC = () => {
         <p className="text-my_gray text-center lg:text-left">
           Criando sites responsivos onde a tecnologia encontra a criatividade.
         </p>
-        <button className="outline outline-1 py-2 px-4 text-primary">
+        <button className="outline outline-1 py-2 px-4 text-primary animate-pulse animate-once animate-delay-[2000ms] animate-ease-linear  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:hover:text-my_gray duration-300">
           Contato!
         </button>
       </section>
@@ -24,7 +24,7 @@ const Apresentation: React.FC = () => {
           width={386}
           height={386}
           src={"/daniloGomes.png"}
-          className="select-none"
+          className="select-none animate-fade-left animate-delay-1000"
         ></Image>
 
         <Image

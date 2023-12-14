@@ -14,6 +14,8 @@ const config: Config = {
       my_white: '#FFFFFF',
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 export default config

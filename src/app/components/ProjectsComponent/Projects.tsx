@@ -24,6 +24,14 @@ const Projects: React.FC = () => {
           projectLink="https://peregin-store.vercel.app/"
           codeLink="https://github.com/Danilogomes76/peregrin-e-comerce-page"
         />
+        <ProjectsCard
+          description="Projeto criado com intuito de colocar em código um template que fiz com Figma."
+          projectTitle="Plantation School"
+          technologies="Vite, Figma, Styled-components, Typescript"
+          imgSrc="/assets/plant.png"
+          projectLink="https://plantation-school-danilogomes76.vercel.app/"
+          codeLink="https://github.com/Danilogomes76/plantation-school"
+        />
       </section>
     </section>
   );
