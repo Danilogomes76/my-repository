@@ -6,8 +6,8 @@
     --bg-color: #282C33;
   }
 
-
-  body{
-    /* background-color: var(--bg-color); */
+  html{
+    scroll-behavior: smooth;
   }
+
 

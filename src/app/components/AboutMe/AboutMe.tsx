@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const AboutMe: React.FC = () => {
   return (
-    <section className="text-my_gray  flex flex-col">
+    <section id="sobre" className="text-my_gray  flex flex-col">
       <p className="text-primary text-3xl after:content-['_‎']">
-        #<span className="text-my_gray">Projetos</span>
+        #<span className="text-my_gray">Sobre mim</span>
       </p>
-      <section className="flex gap-12 items-center">
-        <div className="w-1/2">
+      <section className="flex gap-12 mt-12 items-center">
+        <div className="lg:w-1/2">
           <p>
             Olá, meu nome é Danilo! Sou um desenvolvedor front-end autodidata.
             Posso desenvolver sites responsivos do zero e transformá-los em

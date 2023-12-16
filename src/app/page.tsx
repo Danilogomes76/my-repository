@@ -2,7 +2,9 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Apresentation from "./components/Apresentation/Apresentation";
 import Header from "./components/Header/Header";
 import Message from "./components/Message/Message";
+import Navigation from "./components/Navigation/Navigation";
 import Projects from "./components/ProjectsComponent/Projects";
+import { Reveal } from "./components/Reveal/Reveal";
 import Skills from "./components/Skills/Skills";
 
 export default function Home() {
@@ -12,10 +14,20 @@ export default function Home() {
         <Header />
         <section className="p-5 mt-5 gap-28 items-center flex flex-col lg:m-0">
           <Apresentation />
-          <Message />
+          <Reveal>
+            <Message />
+          </Reveal>
+
           <Projects />
-          <Skills />
-          <AboutMe />
+
+          <Reveal>
+            <Skills />
+          </Reveal>
+
+          <Reveal>
+            <AboutMe />
+          </Reveal>
+          <Navigation />
         </section>
       </div>
     </div>

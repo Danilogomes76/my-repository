@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const Header: React.FC = () => {
   return (
-    <div className="items-center flex flex-row-reverse lg:flex lg:flex-row lg:py-4 justify-between w-full shadow-md lg:shadow-none">
+    <div
+      id="home"
+      className="items-center flex flex-row-reverse md:flex lg:flex-row lg:py-4 justify-between w-full shadow-md lg:shadow-none"
+    >
       <Image
         alt="logo"
         width={100}

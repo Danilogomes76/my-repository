@@ -1,37 +1,48 @@
 import ProjectsCard from "../ProjectsCard/ProjectsCard";
+import { Reveal } from "../Reveal/Reveal";
 
 const Projects: React.FC = () => {
   return (
-    <section className="w-full">
-      <p className="text-primary text-3xl after:content-['_‎']">
-        #<span className="text-my_gray">Projetos</span>
-      </p>
+    <section id="projetos" className="w-full">
+      <Reveal>
+        <p className="text-primary text-3xl after:content-['_‎']">
+          #<span className="text-my_gray">Projetos</span>
+        </p>
+      </Reveal>
 
       <section className="mt-12 flex lg:grid-cols-3 lg:grid justify-center flex-wrap md:flex-row items-center lg:flex-row flex-col gap-4">
-        <ProjectsCard
-          description="Aplicação para organizar seus livros que consome a API Google Books."
-          projectTitle="Books Libry"
-          technologies="Vite, Axios, Redux, Stitches"
-          imgSrc="https://book-organize.vercel.app/assets/book.c3651569.png"
-          projectLink="https://book-organize.vercel.app"
-          codeLink="https://github.com/Danilogomes76/books_app"
-        />
-        <ProjectsCard
-          description="Loja fake usando a Fake Store API onde você pode adicionar e remover do carrinho/curtidos. Possui rotas dinâmicas."
-          projectTitle="Peregrin Store"
-          technologies="NextJS, Sass Axios, Reduxjs/toolkit, Typescript"
-          imgSrc="https://peregin-store.vercel.app/_next/static/media/logo.b037c7b9.svg"
-          projectLink="https://peregin-store.vercel.app/"
-          codeLink="https://github.com/Danilogomes76/peregrin-e-comerce-page"
-        />
-        <ProjectsCard
-          description="Projeto criado com intuito de colocar em código um template que fiz com Figma."
-          projectTitle="Plantation School"
-          technologies="Vite, Figma, Styled-components, Typescript"
-          imgSrc="/assets/plant.png"
-          projectLink="https://plantation-school-danilogomes76.vercel.app/"
-          codeLink="https://github.com/Danilogomes76/plantation-school"
-        />
+        <Reveal>
+          <ProjectsCard
+            description="Aplicação para organizar seus livros que consome a API Google Books."
+            projectTitle="Books Libry"
+            technologies="Vite, Axios, Redux, Stitches"
+            imgSrc="https://book-organize.vercel.app/assets/book.c3651569.png"
+            projectLink="https://book-organize.vercel.app"
+            codeLink="https://github.com/Danilogomes76/books_app"
+          />
+        </Reveal>
+
+        <Reveal>
+          <ProjectsCard
+            description="Loja fake usando a Fake Store API onde você pode adicionar e remover do carrinho/curtidos. Possui rotas dinâmicas."
+            projectTitle="Peregrin Store"
+            technologies="NextJS, Sass Axios, Reduxjs/toolkit, Typescript"
+            imgSrc="https://peregin-store.vercel.app/_next/static/media/logo.b037c7b9.svg"
+            projectLink="https://peregin-store.vercel.app/"
+            codeLink="https://github.com/Danilogomes76/peregrin-e-comerce-page"
+          />
+        </Reveal>
+
+        <Reveal>
+          <ProjectsCard
+            description="Projeto criado com intuito de colocar em código um template que fiz com Figma."
+            projectTitle="Plantation School"
+            technologies="Vite, Figma, Styled-components, Typescript"
+            imgSrc="/assets/plant.png"
+            projectLink="https://plantation-school-danilogomes76.vercel.app/"
+            codeLink="https://github.com/Danilogomes76/plantation-school"
+          />
+        </Reveal>
       </section>
     </section>
   );

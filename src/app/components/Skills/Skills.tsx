@@ -3,7 +3,7 @@ import SkillCard from "../SkillsCard/SkillCard";
 
 const Skills: React.FC = () => {
   return (
-    <section className="w-full">
+    <section id="conhecimentos" className="w-full">
       <p className="text-primary text-3xl after:content-['_‎']">
         #<span className="text-my_gray">Conhecimentos</span>
       </p>
