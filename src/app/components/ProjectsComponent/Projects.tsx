@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
         #<span className="text-my_gray">Projetos</span>
       </p>
 
-      <section className="mt-12 flex justify-center flex-wrap md:flex-row items-center lg:flex-row flex-col gap-4">
+      <section className="mt-12 flex lg:grid-cols-3 lg:grid justify-center flex-wrap md:flex-row items-center lg:flex-row flex-col gap-4">
         <ProjectsCard
           description="Aplicação para organizar seus livros que consome a API Google Books."
           projectTitle="Books Libry"

@@ -1,3 +1,4 @@
+import AboutMe from "./components/AboutMe/AboutMe";
 import Apresentation from "./components/Apresentation/Apresentation";
 import Header from "./components/Header/Header";
 import Message from "./components/Message/Message";
@@ -14,6 +15,7 @@ export default function Home() {
           <Message />
           <Projects />
           <Skills />
+          <AboutMe />
         </section>
       </div>
     </div>
