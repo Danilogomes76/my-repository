@@ -5,9 +5,13 @@ const Projects: React.FC = () => {
   return (
     <section id="projetos" className="w-full">
       <Reveal>
-        <p className="text-primary text-3xl after:content-['_‎']">
-          #<span className="text-my_gray">Projetos</span>
-        </p>
+        <div className="text-primary flex text-3xl after:content-['_‎']">
+          #
+          <div className="flex gap-2">
+            <span className="text-my_gray">Projetos</span>
+            <span className="cursor-default hidden lg:block">-----------</span>
+          </div>
+        </div>
       </Reveal>
 
       <section className="mt-12 flex lg:grid-cols-3 lg:grid justify-center flex-wrap md:flex-row items-center lg:flex-row flex-col gap-4">

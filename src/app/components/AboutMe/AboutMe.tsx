@@ -3,9 +3,13 @@ import Image from "next/image";
 const AboutMe: React.FC = () => {
   return (
     <section id="sobre" className="text-my_gray  flex flex-col">
-      <p className="text-primary text-3xl after:content-['_‎']">
-        #<span className="text-my_gray">Sobre mim</span>
-      </p>
+      <div className="text-primary flex text-3xl after:content-['_‎']">
+        #
+        <div className="flex gap-2">
+          <span className="text-my_gray">Sobre-mim</span>
+          <span className="cursor-default hidden lg:block">-----------</span>
+        </div>
+      </div>
       <section className="flex gap-12 mt-12 items-center">
         <div className="lg:w-1/2">
           <p>

@@ -15,22 +15,32 @@ const Header: React.FC = () => {
       ></Image>
       <ul className="lg:flex hidden gap-10 lg:flex-row">
         <li className="text-primary cursor-default">
-          #<span className="text-my_gray hover:text-my_white">Home</span>
+          <a href="#home">
+            #<span className="text-my_gray hover:text-my_white">Home</span>
+          </a>
         </li>
         <li className="text-primary cursor-default">
-          #<span className="text-my_gray hover:text-my_white">Projetos</span>
+          <a href="#projetos">
+            #<span className="text-my_gray hover:text-my_white">Projetos</span>
+          </a>
         </li>
         <li className="text-primary cursor-default">
-          #
-          <span className="text-my_gray hover:text-my_white">
-            Conhecimentos
-          </span>
+          <a href="#conhecimentos">
+            #
+            <span className="text-my_gray hover:text-my_white">
+              Conhecimentos
+            </span>
+          </a>
         </li>
         <li className="text-primary cursor-default">
-          #<span className="text-my_gray hover:text-my_white">Sobre</span>
+          <a href="#sobre">
+            #<span className="text-my_gray hover:text-my_white">Sobre</span>
+          </a>
         </li>
         <li className="text-primary cursor-default">
-          #<span className="text-my_gray hover:text-my_white">Contato</span>
+          <a href="#social">
+            #<span className="text-my_gray hover:text-my_white">Contato</span>
+          </a>
         </li>
       </ul>
     </div>

@@ -4,9 +4,13 @@ import SkillCard from "../SkillsCard/SkillCard";
 const Skills: React.FC = () => {
   return (
     <section id="conhecimentos" className="w-full">
-      <p className="text-primary text-3xl after:content-['_‎']">
-        #<span className="text-my_gray">Conhecimentos</span>
-      </p>
+      <div className="text-primary flex text-3xl after:content-['_‎']">
+        #
+        <div className="flex gap-2">
+          <span className="text-my_gray">Conhecimentos</span>
+          <span className="cursor-default hidden lg:block">-----------</span>
+        </div>
+      </div>
       <section className="flex flex-col lg:flex-row items-center  gap-12 mt-12">
         <div className="w-1/2 relative lg:block hidden">
           <div className="w-96 h-72">

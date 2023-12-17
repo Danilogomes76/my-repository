@@ -28,9 +28,9 @@ const Navigation: React.FC = () => {
     >
       <motion.ul
         variants={{
-          hidden: { clipPath: "inset(100% 0% 0% 0%);" },
+          hidden: { clipPath: "inset(100% 0% 0% 0%)" },
           visible: {
-            clipPath: "inset(0% 0% 0% 0%);",
+            clipPath: "inset(0% 0% 0% 0%)",
           },
         }}
         initial="hidden"
@@ -83,7 +83,7 @@ const Navigation: React.FC = () => {
           </a>
         </li>
         <li className="">
-          <a href="#contato">
+          <a href="#social">
             <Image
               alt="logo"
               width={30}
@@ -108,6 +108,7 @@ const Navigation: React.FC = () => {
           height={30}
           src={"/assets/hamburgues.png"}
           className=""
+          priority={true}
         ></Image>
       </motion.button>
     </section>

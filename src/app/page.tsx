@@ -1,5 +1,7 @@
 import AboutMe from "./components/AboutMe/AboutMe";
 import Apresentation from "./components/Apresentation/Apresentation";
+import Contacts from "./components/Contacts/Contacts";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Message from "./components/Message/Message";
 import Navigation from "./components/Navigation/Navigation";
@@ -27,8 +29,14 @@ export default function Home() {
           <Reveal>
             <AboutMe />
           </Reveal>
+          <Reveal>
+            <Contacts />
+          </Reveal>
           <Navigation />
         </section>
+        <Reveal width="100%">
+          <Footer />
+        </Reveal>
       </div>
     </div>
   );
