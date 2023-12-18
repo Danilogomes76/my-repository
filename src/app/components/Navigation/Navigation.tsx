@@ -2,7 +2,7 @@
 
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navigation: React.FC = () => {
   const ref = useRef(null);
@@ -21,10 +21,19 @@ const Navigation: React.FC = () => {
     buttonControls.start("border");
   };
 
+  useEffect(() => {
+    clipPathControls.start({
+      clipPath: isClipPathVisible
+        ? "inset(100% 0% 0% 0%)"
+        : "inset(0% 0% 0% 0%)",
+    });
+    buttonControls.start("border");
+  }, [isClipPathVisible, clipPathControls, buttonControls]);
+
   return (
     <section
       ref={ref}
-      className="fixed  m-6 bottom-0 right-0 flex flex-col items-center lg:hidden justify-end"
+      className="fixed z-20  m-6 bottom-0 right-0 flex flex-col items-center lg:hidden justify-end"
     >
       <motion.ul
         variants={{

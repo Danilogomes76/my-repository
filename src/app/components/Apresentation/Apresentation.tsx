@@ -15,7 +15,7 @@ const Apresentation: React.FC = () => {
           Criando sites responsivos onde a tecnologia encontra a criatividade.
         </p>
         <button className="outline outline-1 py-2 px-4 text-primary animate-pulse animate-once animate-delay-[2000ms] animate-ease-linear  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:hover:text-my_gray duration-300">
-          Contato!
+          <a href="#social">Contato!</a>
         </button>
       </section>
       <section className="relative mt-8 lg:mt-0">

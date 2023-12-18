@@ -11,33 +11,35 @@ import Skills from "./components/Skills/Skills";
 
 export default function Home() {
   return (
-    <div className="flex justify-center">
-      <div className="w-[64rem] items-center lg:p-0 flex justify-center flex-col">
-        <Header />
-        <section className="p-5 mt-5 gap-28 items-center flex flex-col lg:m-0">
-          <Apresentation />
-          <Reveal>
-            <Message />
-          </Reveal>
+    <>
+      <div className="flex justify-center">
+        <div className="w-[64rem] items-center lg:p-0 flex justify-center flex-col">
+          <Header />
+          <section className="p-5 mt-5 gap-28 items-center flex flex-col lg:m-0">
+            <Apresentation />
+            <Reveal>
+              <Message />
+            </Reveal>
 
-          <Projects />
+            <Projects />
 
-          <Reveal>
-            <Skills />
-          </Reveal>
+            <Reveal>
+              <Skills />
+            </Reveal>
 
-          <Reveal>
-            <AboutMe />
-          </Reveal>
-          <Reveal>
-            <Contacts />
-          </Reveal>
-          <Navigation />
-        </section>
-        <Reveal width="100%">
-          <Footer />
-        </Reveal>
+            <Reveal>
+              <AboutMe />
+            </Reveal>
+            <Reveal>
+              <Contacts />
+            </Reveal>
+            <Navigation />
+          </section>
+        </div>
       </div>
-    </div>
+      <Reveal width="100%">
+        <Footer />
+      </Reveal>
+    </>
   );
 }
