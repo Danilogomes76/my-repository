@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
       <section className="mt-12 flex lg:grid-cols-3 lg:grid-rows-2 lg:grid justify-center flex-wrap md:flex-row items-center lg:flex-row flex-col gap-4">
         {projectsData.map((project, index) =>
           index == 3 ? (
-            <div className="col-start-2 row-start-2">
+            <div key={index} className="col-start-2 row-start-2">
               <Reveal key={index}>
                 <ProjectsCard {...project} />
               </Reveal>
