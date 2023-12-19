@@ -55,6 +55,7 @@ const Navigation: React.FC = () => {
               height={30}
               src={"/assets/home.png"}
               className="opacity-50"
+              priority
             ></Image>
           </a>
         </li>
@@ -66,6 +67,7 @@ const Navigation: React.FC = () => {
               height={30}
               src={"/assets/projects.png"}
               className="opacity-50"
+              priority
             ></Image>
           </a>
         </li>

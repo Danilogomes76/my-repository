@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
           alt="logo"
           width={100}
           height={100}
-          src={"/daniloGomes.png"}
-          className="w-20 lg:w-auto"
+          src={"/daniloGomes.svg"}
+          className="w-20"
         ></Image>
       </section>
     </section>

@@ -23,7 +23,7 @@ const Apresentation: React.FC = () => {
           alt="logo"
           width={386}
           height={386}
-          src={"/daniloGomes.png"}
+          src={"/daniloGomes.svg"}
           className="select-none animate-fade-left animate-delay-1000"
         ></Image>
 
