@@ -19,6 +19,7 @@ const Footer: React.FC = () => {
           height={100}
           src={"/daniloGomes.svg"}
           className="w-20"
+          priority
         ></Image>
       </section>
     </section>
