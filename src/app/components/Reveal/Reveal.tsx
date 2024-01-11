@@ -19,7 +19,7 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
     if (isInView) {
       mainsControl.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainsControl]);
 
   return (
     <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
