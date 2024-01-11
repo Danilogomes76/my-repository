@@ -29,8 +29,8 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
         className={`border ${padding ? "p-8" : ""}`}
         priority
       />
-      <p className="border border-my_gray text-my_gray">{technologies}</p>
-      <div className="border p-4 justify-around h-full flex flex-col items-start gap-4">
+      <p className="border border-my_gray p-2 text-my_gray">{technologies}</p>
+      <div className="border p-2 justify-around h-full flex flex-col items-start gap-4">
         <p className="text-2xl text-my_white">{projectTitle}</p>
         <p className="text-my_gray">{description}</p>
         <div className="flex gap-4">

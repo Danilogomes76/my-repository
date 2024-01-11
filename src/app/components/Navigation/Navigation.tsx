@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 const Navigation: React.FC = () => {
   const ref = useRef(null);
 
-  const [isClipPathVisible, setIsClipPathVisible] = useState(true);
+  const [isClipPathVisible, setIsClipPathVisible] = useState(false);
   const clipPathControls = useAnimation();
   const buttonControls = useAnimation();
 
@@ -18,7 +18,7 @@ const Navigation: React.FC = () => {
         : "inset(0% 0% 0% 0%)",
     });
     setIsClipPathVisible(!isClipPathVisible);
-    buttonControls.start("border");
+    buttonControls.start(isClipPathVisible ? "border" : "noBorder");
   };
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
         ? "inset(100% 0% 0% 0%)"
         : "inset(0% 0% 0% 0%)",
     });
-    buttonControls.start("border");
+    buttonControls.start(isClipPathVisible ? "border" : "noBorder");
   }, [isClipPathVisible, clipPathControls, buttonControls]);
 
   return (
@@ -56,6 +56,7 @@ const Navigation: React.FC = () => {
               src={"/assets/home.png"}
               className="opacity-50"
               priority
+              onClick={toggleClipPath}
             ></Image>
           </a>
         </li>
@@ -68,6 +69,7 @@ const Navigation: React.FC = () => {
               src={"/assets/projects.png"}
               className="opacity-50"
               priority
+              onClick={toggleClipPath}
             ></Image>
           </a>
         </li>
@@ -79,6 +81,7 @@ const Navigation: React.FC = () => {
               height={30}
               src={"/assets/lamp.png"}
               className="opacity-50"
+              onClick={toggleClipPath}
             ></Image>
           </a>
         </li>
@@ -90,6 +93,7 @@ const Navigation: React.FC = () => {
               height={30}
               src={"/assets/about.png"}
               className="opacity-50"
+              onClick={toggleClipPath}
             ></Image>
           </a>
         </li>
@@ -101,14 +105,17 @@ const Navigation: React.FC = () => {
               height={30}
               src={"/assets/phone.png"}
               className="opacity-50"
+              onClick={toggleClipPath}
             ></Image>
           </a>
         </li>
       </motion.ul>
 
       <motion.button
+        // animate={buttonControls}
         variants={{
-          border: { borderTopLeftRadius: "50%", borderTopRightRadius: "50%" },
+          noBorder: { borderTopLeftRadius: "50%", borderTopRightRadius: "50%" },
+          border: { borderTopLeftRadius: "none", borderTopRightRadius: "none" },
         }}
         onClick={toggleClipPath}
         className="md:w-14 md:h-14 w-12 h-12 z-20 flex items-center justify-center rounded bg-my_white"
