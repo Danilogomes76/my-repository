@@ -12,7 +12,7 @@ import Skills from "./components/Skills/Skills";
 export default function Home() {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center overflow-hidden">
         <div className="w-[64rem] items-center lg:p-0 flex justify-center flex-col">
           <Header />
           <section className="p-5 mt-5 gap-28 items-center flex flex-col lg:m-0">

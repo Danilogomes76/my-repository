@@ -12,21 +12,13 @@ const Navigation: React.FC = () => {
   const buttonControls = useAnimation();
 
   const toggleClipPath = async () => {
-    await clipPathControls.start({
-      clipPath: isClipPathVisible
-        ? "inset(100% 0% 0% 0%)"
-        : "inset(0% 0% 0% 0%)",
-    });
+    await clipPathControls.start(isClipPathVisible ? "hidden" : "visible");
     setIsClipPathVisible(!isClipPathVisible);
     buttonControls.start(isClipPathVisible ? "border" : "noBorder");
   };
 
   useEffect(() => {
-    clipPathControls.start({
-      clipPath: isClipPathVisible
-        ? "inset(100% 0% 0% 0%)"
-        : "inset(0% 0% 0% 0%)",
-    });
+    clipPathControls.start(isClipPathVisible ? "hidden" : "visible");
     buttonControls.start(isClipPathVisible ? "border" : "noBorder");
   }, [isClipPathVisible, clipPathControls, buttonControls]);
 

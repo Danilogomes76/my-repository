@@ -5,9 +5,9 @@ const AboutMe: React.FC = () => {
     <section id="sobre" className="text-my_gray  flex flex-col">
       <div className="text-primary flex text-3xl after:content-['_‎']">
         #
-        <div className="flex gap-2">
+        <div className="flex gap-2 relative">
           <span className="text-my_gray">Sobre-mim</span>
-          <span className="cursor-default hidden lg:block">-----------</span>
+          <span className="border-b border-solid absolute bottom-[35%] left-[100%] ml-2 border-black bg-primary h-[2px] w-48 cursor-default hidden lg:block"></span>
         </div>
       </div>
       <section className="flex gap-12 mt-12 items-center">

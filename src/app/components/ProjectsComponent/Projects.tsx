@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
       <Reveal>
         <div className="text-primary flex text-3xl after:content-['_‎']">
           #
-          <div className="flex gap-2">
+          <div className="flex gap-2 relative">
             <span className="text-my_gray">Projetos</span>
             <span className="cursor-default hidden lg:block">-----------</span>
           </div>
