@@ -137,7 +137,7 @@ const options: ISourceOptions = {
     },
   },
   background: {
-    color: "#C778B5",
+    color: "#ABB2BF",
   },
   emitters: {
     position: {
