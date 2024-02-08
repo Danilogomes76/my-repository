@@ -12,6 +12,14 @@ export const metadata: Metadata = {
   icons: {
     icon: "/daniloGomes.svg",
   },
+  openGraph: {
+    title: "Danilo Gomes",
+    description: "Bem vindo ao meu portfólio!",
+    images: [
+      "/dGomes.png",
+      "https://avatars.githubusercontent.com/u/102035834?v=4",
+    ],
+  },
 };
 
 export default function RootLayout({

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Apresentation from "./components/Apresentation/Apresentation";
 import Contacts from "./components/Contacts/Contacts";
@@ -13,15 +12,6 @@ import Skills from "./components/Skills/Skills";
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta
-          property="og:image"
-          content={
-            "https://avatars.githubusercontent.com/u/102035834?v=4" ||
-            "/dGomes.png"
-          }
-        />
-      </Head>
       <div className="flex justify-center overflow-hidden">
         <div className="w-[64rem] items-center lg:p-0 flex justify-center flex-col">
           <Header />
