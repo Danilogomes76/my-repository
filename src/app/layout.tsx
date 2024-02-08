@@ -15,7 +15,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Danilo Gomes",
     description: "Bem vindo ao meu portfólio!",
-    images: ["https://danilo-gomes.online/daniloGomes-with-bg.svg"],
+    images: [
+      "https://danilo-gomes.online/daniloGomes-with-bg.svg",
+      "https://avatars.githubusercontent.com/u/102035834?v=4",
+    ],
   },
 };
 
