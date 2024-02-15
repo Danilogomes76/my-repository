@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Message from "./components/Message/Message";
 import Navigation from "./components/Navigation/Navigation";
+import NavigationTwo from "./components/NavigationTwo/NavigationTwo";
 import Projects from "./components/ProjectsComponent/Projects";
 import { Reveal } from "./components/Reveal/Reveal";
 import Skills from "./components/Skills/Skills";
@@ -33,7 +34,7 @@ export default function Home() {
             <Reveal>
               <Contacts />
             </Reveal>
-            <Navigation />
+            <NavigationTwo />
           </section>
         </div>
       </div>

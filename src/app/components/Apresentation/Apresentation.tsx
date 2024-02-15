@@ -16,9 +16,19 @@ const Apresentation: React.FC = () => {
         <p className="text-my_gray text-center lg:text-left">
           Criando sites responsivos onde a tecnologia encontra a criatividade.
         </p>
-        <button className="outline outline-1 py-2 px-4 text-primary animate-pulse animate-once animate-delay-[2000ms] animate-ease-linear  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:hover:text-my_gray duration-300">
-          <a href="#social">Contato!</a>
-        </button>
+        <div className="flex gap-4">
+          <button className="outline outline-1 py-2 px-4 text-primary animate-pulse animate-once animate-delay-[2000ms] animate-ease-linear  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:hover:text-my_gray duration-300">
+            <a href="#social">Contato!</a>
+          </button>
+          <button className="outline outline-1 py-2 px-4 text-primary animate-pulse animate-once animate-delay-[2000ms] animate-ease-linear  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:hover:text-my_gray duration-300">
+            <a
+              href="https://www.calameo.com/read/0075673562034eaec4621"
+              target="_blank"
+            >
+              Currículo
+            </a>
+          </button>
+        </div>
       </section>
       <section className="relative mt-8 lg:mt-0">
         <MyImage />
