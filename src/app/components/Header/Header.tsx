@@ -4,7 +4,7 @@ const Header: React.FC = () => {
   return (
     <div
       id="home"
-      className="items-center flex flex-row-reverse md:flex lg:flex-row lg:py-4 justify-between w-full shadow-md lg:shadow-none"
+      className="items-center flex flex-row-reverse md:flex lg:flex-row lg:w-[64rem] lg:py-4 justify-between w-full shadow-md lg:shadow-none"
     >
       <Image
         alt="logo"

@@ -14,27 +14,30 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center overflow-hidden">
-        <div className="w-[64rem] items-center lg:p-0 flex justify-center flex-col">
-          <Header />
-          <section className="p-5 mt-5 gap-28 items-center flex flex-col lg:m-0">
+        <div className=" items-center w-full lg:p-0 flex  flex-col">
+          <section className="w-full">
             <Apresentation />
-            <Reveal>
-              <Message />
-            </Reveal>
+            <section className="w-full flex justify-center myMainGradient">
+              <section className="p-5 lg:p-0 mt-5 gap-28 items-center flex flex-col lg:m-0 w-[64rem] ">
+                <Reveal>
+                  <Message />
+                </Reveal>
 
-            <Projects />
+                <Projects />
 
-            <Reveal>
-              <Skills />
-            </Reveal>
+                <Reveal>
+                  <Skills />
+                </Reveal>
 
-            <Reveal>
-              <AboutMe />
-            </Reveal>
-            <Reveal>
-              <Contacts />
-            </Reveal>
-            <NavigationTwo />
+                <Reveal>
+                  <AboutMe />
+                </Reveal>
+                <Reveal>
+                  <Contacts />
+                </Reveal>
+                <NavigationTwo />
+              </section>
+            </section>
           </section>
         </div>
       </div>

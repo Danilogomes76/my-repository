@@ -1,106 +1,43 @@
-import Image from "next/image";
-
-import MyImage from "../MyImage/MyImage";
+import Header from "../Header/Header";
+import { LinkedinIcon, GithubIcon, CurriculumIcon } from "../SVGS/Svgs";
 
 const Apresentation: React.FC = () => {
   return (
-    <section className="flex flex-col lg:flex-row justify-center items-center">
-      <section className="flex flex-col gap-8 items-center lg:items-start lg:ml-8">
-        <p className="text-my_white text-3xl text-center lg:text-left">
-          Danilo Gomes{" "}
-          <span className="text-primary block">
-            front-end
-            <br /> developer
-          </span>
-        </p>
-        <p className="text-my_gray text-center lg:text-left">
-          Criando sites responsivos onde a tecnologia encontra a criatividade.
-        </p>
-        <div className="flex gap-4">
-          <button className="outline outline-1 py-2 px-4 text-primary animate-pulse animate-once animate-delay-[2000ms] animate-ease-linear  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:hover:text-my_gray duration-300">
-            <a href="#social">Contato!</a>
-          </button>
-          <button className="outline outline-1 py-2 px-4 text-primary animate-pulse animate-once animate-delay-[2000ms] animate-ease-linear  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:hover:text-my_gray duration-300">
-            <a
-              href="https://www.calameo.com/read/0075673562034eaec4621"
-              target="_blank"
-            >
-              Currículo
-            </a>
-          </button>
+    <section className="myGradient  w-full h-[890px]  gap-32 flex flex-col items-center">
+      <Header />
+      <section className="w-[64rem]">
+        <div>
+          <p className="text-my_white  text-base">OI 🖐️ EU SOU O DANILO</p>
+          <div className="text-my_white text-9xl font-bold">
+            <div className="text-my_white text-9xl font-bold flex items-center gap-10">
+              <p>FRONTEND</p>
+              <div className=" flex gap-5">
+                <LinkedinIcon
+                  fillHex="#B5AB99"
+                  className="w-9 h-9 hover:translate-y-[-8px] transition"
+                  href="https://www.linkedin.com/in/danilo-gomes76/"
+                />
+                <GithubIcon
+                  fillHex="#B5AB99"
+                  className="w-9 h-9 hover:translate-y-[-8px] transition"
+                  href="https://github.com/Danilogomes76/"
+                />
+                <CurriculumIcon
+                  fillHex="#B5AB99"
+                  className="w-9 h-9 hover:translate-y-[-8px] transition"
+                  href="https://www.calameo.com/read/0075673562034eaec4621"
+                />
+              </div>
+            </div>
+            DEVELOPER
+          </div>
         </div>
-      </section>
-      <section className="relative mt-8 lg:mt-0">
-        <MyImage />
-
-        <Image
-          alt="dots"
-          width={100}
-          height={100}
-          src={"/assets/Dots.png"}
-          className="absolute select-none top-[20%] "
-        ></Image>
-
-        <Image
-          alt="styleOutline"
-          width={100}
-          height={100}
-          src={"/assets/Style=Outline.svg"}
-          className="absolute select-none top-[60%] left-[70%]"
-        ></Image>
+        <p className="text-my_white text-right ">
+          TENHO 20 ANOS, POSSUO 2 ANOS DE EXPÊRIENCIA COMO DESENVOLVEDOR
+        </p>
       </section>
     </section>
   );
 };
 
 export default Apresentation;
-// import Image from "next/image";
-
-// const Apresentation: React.FC = () => {
-//   return (
-//     <section className="flex flex-col lg:flex-row justify-center items-center">
-//       <section className="flex flex-col gap-8 items-center lg:items-start lg:ml-8">
-//         <p className="text-my_white text-3xl text-center lg:text-left">
-//           Danilo Gomes{" "}
-//           <span className="text-primary block">
-//             front-end
-//             <br /> developer
-//           </span>
-//         </p>
-//         <p className="text-my_gray text-center lg:text-left">
-//           Criando sites responsivos onde a tecnologia encontra a criatividade.
-//         </p>
-//         <button className="outline outline-1 py-2 px-4 text-primary animate-pulse animate-once animate-delay-[2000ms] animate-ease-linear  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:hover:text-my_gray duration-300">
-//           <a href="#social">Contato!</a>
-//         </button>
-//       </section>
-//       <section className="relative mt-8 lg:mt-0">
-//         <Image
-//           alt="logo"
-//           width={386}
-//           height={386}
-//           src={"/dGomes.png"}
-//           className="select-none relative z-10 bg-primary animate-fade-left animate-delay-1000"
-//         ></Image>
-
-//         <Image
-//           alt="dots"
-//           width={100}
-//           height={100}
-//           src={"/assets/Dots.png"}
-//           className="absolute select-none top-[20%] "
-//         ></Image>
-
-//         <Image
-//           alt="styleOutline"
-//           width={100}
-//           height={100}
-//           src={"/assets/Style=Outline.svg"}
-//           className="absolute select-none top-[60%] left-[70%]"
-//         ></Image>
-//       </section>
-//     </section>
-//   );
-// };
-
-// export default Apresentation;

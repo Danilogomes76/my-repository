@@ -26,9 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <body
-        className={`${fira_code.className} bg-[url('/assets/bg.png')] bg-cover `}
-      >
+      <body className={`${fira_code.className} `}>
         {children}
         <Analytics />
       </body>
