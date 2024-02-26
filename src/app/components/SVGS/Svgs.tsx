@@ -7,7 +7,7 @@ interface Props {
 const LinkedinIcon: React.FC<Props> = ({ fillHex, className, href }: Props) => {
   return (
     <a href={href} target="_blank">
-      <svg viewBox="0 0 24 24" fill="none" className={className}>
+      <svg viewBox="0 0 24 24" fill={fillHex} className={className}>
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
@@ -43,7 +43,7 @@ const LinkedinIcon: React.FC<Props> = ({ fillHex, className, href }: Props) => {
 const GithubIcon: React.FC<Props> = ({ fillHex, className, href }: Props) => {
   return (
     <a href={href} target="_blank">
-      <svg viewBox="0 0 24 24" fill="none" className={className}>
+      <svg viewBox="0 0 24 24" fill={fillHex} className={className}>
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
@@ -75,7 +75,7 @@ const CurriculumIcon: React.FC<Props> = ({
         width="35"
         height="35"
         viewBox="0 0 35 35"
-        fill="none"
+        fill={fillHex}
         xmlns="http://www.w3.org/2000/svg"
         className={className}
       >

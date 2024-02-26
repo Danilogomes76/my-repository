@@ -7,11 +7,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      backgroundImage: {
+        peregrin: "url('/assets/peregrin.png')",
+        plantation: "url('/assets/plantation.png')",
+      },
+    },
     colors: {
       bg_color: "#282C33",
       primary: "#C778DD",
       my_gray: "#ABB2BF",
       my_white: "#FFFFFF",
+      my_black: "	#000000",
     },
     keyframes: {
       ted: {

@@ -15,32 +15,44 @@ const Header: React.FC = () => {
         priority
       ></Image>
       <ul className="lg:flex hidden gap-10 lg:flex-row">
-        <li className="text-primary cursor-default">
+        <li className="text-my_gray  cursor-default">
           <a href="#home">
-            #<span className="text-my_gray hover:text-my_white">Home</span>
+            #
+            <span className="text-my_gray hover:text-my_white transition ease-in-out delay-150">
+              Home
+            </span>
           </a>
         </li>
-        <li className="text-primary cursor-default">
+        <li className="text-my_gray  cursor-default">
           <a href="#projetos">
-            #<span className="text-my_gray hover:text-my_white">Projetos</span>
+            #
+            <span className="text-my_gray hover:text-my_white transition ease-in-out delay-150">
+              Projetos
+            </span>
           </a>
         </li>
-        <li className="text-primary cursor-default">
+        <li className="text-my_gray  cursor-default">
           <a href="#conhecimentos">
             #
-            <span className="text-my_gray hover:text-my_white">
+            <span className="text-my_gray hover:text-my_white transition ease-in-out delay-150">
               Conhecimentos
             </span>
           </a>
         </li>
-        <li className="text-primary cursor-default">
+        <li className="text-my_gray  cursor-default">
           <a href="#sobre">
-            #<span className="text-my_gray hover:text-my_white">Sobre</span>
+            #
+            <span className="text-my_gray hover:text-my_white transition ease-in-out delay-150">
+              Sobre
+            </span>
           </a>
         </li>
-        <li className="text-primary cursor-default">
+        <li className="text-my_gray  cursor-default">
           <a href="#social">
-            #<span className="text-my_gray hover:text-my_white">Contato</span>
+            #
+            <span className="text-my_gray hover:text-my_white transition ease-in-out delay-150">
+              Contato
+            </span>
           </a>
         </li>
       </ul>

@@ -4,6 +4,8 @@ import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 
+import Providers from "./Providers";
+
 const fira_code = Fira_Code({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -27,8 +29,10 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body className={`${fira_code.className} `}>
-        {children}
-        <Analytics />
+        <Providers>
+          {children}
+          <Analytics />
+        </Providers>
       </body>
     </html>
   );

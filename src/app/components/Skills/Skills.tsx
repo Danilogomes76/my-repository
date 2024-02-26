@@ -4,12 +4,12 @@ import SkillCard from "../SkillsCard/SkillCard";
 const Skills: React.FC = () => {
   return (
     <section id="conhecimentos" className="w-full">
-      <div className="text-primary flex text-3xl after:content-['_‎']">
+      <div className="text-my_white flex text-3xl after:content-['_‎']">
         #
         <div className="flex gap-2 relative">
-          <span className="text-my_gray">Conhecimentos</span>
+          <span className="text-my_white">Conhecimentos</span>
 
-          <span className="border-b border-solid absolute bottom-[35%] left-[100%] ml-2 border-black bg-primary h-[2px] w-48 cursor-default hidden lg:block"></span>
+          <span className="border-b border-solid absolute bottom-[35%] left-[100%] ml-2 border-black bg-my_white h-[2px] w-48 cursor-default hidden lg:block"></span>
         </div>
       </div>
       <section className="flex flex-col lg:flex-row items-center  gap-12 mt-12">
@@ -34,10 +34,10 @@ const Skills: React.FC = () => {
               src={"/assets/Style=Outline.svg"}
               width={113}
               height={113}
-              className="absolute select-none top-[60%] left-[8%]"
+              className="absolute select-none top-[60%] left-[8%] opacity-70"
             />
-            <div className="border w-20 h-20 border-primary absolute select-none top-[10%] left-[70%]"></div>
-            <div className="border w-14 h-14 border-primary absolute select-none top-[75%] left-[80%]"></div>
+            <div className="border w-20 h-20 border-my_white absolute select-none top-[10%] left-[70%]"></div>
+            <div className="border w-14 h-14 border-my_white absolute select-none top-[75%] left-[80%]"></div>
           </div>
         </div>
         <div className="lg:w-1/2 w-[90%] lg:flex gap-4 grid grid-rows-2 grid-cols-2 flex-wrap justify-end">

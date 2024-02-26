@@ -2,9 +2,9 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Apresentation from "./components/Apresentation/Apresentation";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+
 import Message from "./components/Message/Message";
-import Navigation from "./components/Navigation/Navigation";
+
 import NavigationTwo from "./components/NavigationTwo/NavigationTwo";
 import Projects from "./components/ProjectsComponent/Projects";
 import { Reveal } from "./components/Reveal/Reveal";
