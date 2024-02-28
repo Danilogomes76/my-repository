@@ -13,6 +13,7 @@ const Footer: React.FC = () => {
             href="mailto:danilo.gomes.job@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-my_white"
           >
             danilo.gomes.job@gmail.com
           </a>
