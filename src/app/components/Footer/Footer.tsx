@@ -9,7 +9,13 @@ const Footer: React.FC = () => {
           <p className="text-my_gray">Front-end developer</p>
         </section>
         <section>
-          <p className="text-my_white">danilo762410@gmail.com</p>
+          <a
+            href="mailto:danilo.gomes.job@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            danilo.gomes.job@gmail.com
+          </a>
         </section>
       </section>
       <section>

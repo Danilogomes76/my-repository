@@ -134,7 +134,13 @@ const Contacts: React.FC = () => {
                   </g>{" "}
                 </g>
               </svg>
-              danilo762410@gmail.com
+              <a
+                href="mailto:danilo.gomes.job@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                danilo.gomes.job@gmail.com
+              </a>
             </p>
           </div>
         </div>
