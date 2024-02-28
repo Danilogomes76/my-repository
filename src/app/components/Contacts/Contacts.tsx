@@ -1,3 +1,5 @@
+import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
+
 const Contacts: React.FC = () => {
   return (
     <section id="social">
@@ -16,7 +18,9 @@ const Contacts: React.FC = () => {
           contato comigo. :)
         </p>
         <div className="border border-my_white flex flex-col gap-2 self-center lg:self-auto text-my_white p-4">
-          <p className="text-my_white">Mídias</p>
+          <p className="text-my_white text-center  flex justify-center items-center gap-4">
+            <AiOutlineDoubleLeft /> Mídias <AiOutlineDoubleRight />
+          </p>
           <div className="flex flex-col gap-2">
             <p className="flex items-center gap-2">
               {" "}
@@ -134,7 +138,13 @@ const Contacts: React.FC = () => {
                   </g>{" "}
                 </g>
               </svg>
-              danilo762410@gmail.com
+              <a
+                href="mailto:danilo.gomes.job@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                danilo.gomes.job@gmail.com
+              </a>
             </p>
           </div>
         </div>

@@ -1,8 +1,20 @@
 import ProjectsCard from "../ProjectsCard/ProjectsCard";
 import { Reveal } from "../Reveal/Reveal";
 
+export interface Project {
+  description: string;
+  projectTitle: string;
+  technologies: string;
+  imgSrc: string;
+  projectLink: string;
+  codeLink: string;
+  bg: string;
+  topRem: string;
+  rightRem: string;
+}
+
 const Projects: React.FC = () => {
-  const projectsData = [
+  const projectsData: Project[] = [
     {
       description:
         "Loja fake usando a Fake Store API onde você pode adicionar e remover do carrinho/curtidos. Possui rotas dinâmicas.",
@@ -44,29 +56,13 @@ const Projects: React.FC = () => {
       </Reveal>
 
       <section className="mt-12 flex  relative  justify-around flex-wrap md:flex-row items-center lg:flex-row flex-col gap-4">
-        {projectsData.map((project, index) =>
-          index == 3 ? (
-            <div key={index} className="col-start-2 row-start-2">
-              <Reveal key={index}>
-                <ProjectsCard
-                  bg={project.bg}
-                  imgSrc={project.imgSrc}
-                  topRem={project.topRem}
-                  rightRem={project.rightRem}
-                />
-              </Reveal>
-            </div>
-          ) : (
+        {projectsData.map((project, index) => (
+          <div key={index} className="col-start-2 row-start-2">
             <Reveal key={index}>
-              <ProjectsCard
-                bg={project.bg}
-                imgSrc={project.imgSrc}
-                topRem={project.topRem}
-                rightRem={project.rightRem}
-              />
+              <ProjectsCard project={project} />
             </Reveal>
-          )
-        )}
+          </div>
+        ))}
       </section>
     </section>
   );
