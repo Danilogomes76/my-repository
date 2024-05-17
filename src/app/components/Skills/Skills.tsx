@@ -1,61 +1,61 @@
 import Image from "next/image";
 import SkillCard from "../SkillsCard/SkillCard";
+import { ComponentIcon } from "lucide-react";
 
 const Skills: React.FC = () => {
   return (
-    <section id="conhecimentos" className="w-full">
-      <div className="text-my_white flex text-3xl after:content-['_‎']">
-        #
-        <div className="flex gap-2 relative">
-          <span className="text-my_white">Conhecimentos</span>
-
-          <span className="border-b border-solid absolute bottom-[35%] left-[100%] ml-2 border-black bg-my_white h-[2px] w-48 cursor-default hidden lg:block"></span>
-        </div>
-      </div>
-      <section className="flex flex-col lg:flex-row items-center  gap-12 mt-12">
-        <div className="w-1/2 relative lg:block hidden">
-          <div className="w-96 h-72">
-            <Image
-              alt="img"
-              src={"/assets/Dots.png"}
-              width={63}
-              height={63}
-              className="absolute select-none top-[15%] left-[1%]"
-            />
-            <Image
-              alt="img"
-              src={"/assets/Dots.png"}
-              width={63}
-              height={63}
-              className="absolute select-none top-[50%] left-[50%]"
-            />
-            <Image
-              alt="img"
-              src={"/assets/Style=Outline.svg"}
-              width={113}
-              height={113}
-              className="absolute select-none top-[60%] left-[8%] opacity-70"
-            />
-            <div className="border w-20 h-20 border-my_white absolute select-none top-[10%] left-[70%]"></div>
-            <div className="border w-14 h-14 border-my_white absolute select-none top-[75%] left-[80%]"></div>
+    <section className="w-full py-12 md:py-24 lg:py-32">
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Conhecimentos
+            </h2>
+            <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              Aqui estão algumas das principais tecnologias e ferramentas nas
+              quais sou proficiente.
+            </p>
           </div>
         </div>
-        <div className="lg:w-1/2 w-[90%] lg:flex gap-4 grid grid-rows-2 grid-cols-2 flex-wrap justify-end">
-          <SkillCard title="Languages" technologies="Typescript Javascript" />
-          <SkillCard title="Databases" technologies="MySql MongoDb" />
-          <SkillCard title="Tools" technologies="Figma Linux VSCode Git" />
-          <SkillCard
-            title="Frameworks"
-            technologies="React Express.js Next Electron.js Tailwind Node.js"
-          />
-          <SkillCard
-            title="Others"
-            technologies="HTML CSS SASS ESLint Jest CRUD"
-          />
+        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 py-12 sm:grid-cols-3 lg:grid-cols-4">
+          <SkillCard technologie="Typescript" Icon={ComponentIcon} />
+          {technologies.map((technologie) => {
+            return (
+              <>
+                <SkillCard
+                  technologie={technologie.title}
+                  Icon={ComponentIcon}
+                />
+              </>
+            );
+          })}
         </div>
-      </section>
+      </div>
     </section>
   );
 };
+
+const technologies = [
+  { title: "Typescript", Icon: "typescript-icon" },
+  { title: "Javascript", Icon: "javascript-icon" },
+  { title: "MySQL", Icon: "mysql-icon" },
+  { title: "MongoDB", Icon: "mongodb-icon" },
+  { title: "Figma", Icon: "figma-icon" },
+  { title: "Linux", Icon: "linux-icon" },
+  { title: "VSCode", Icon: "vscode-icon" },
+  { title: "Git", Icon: "git-icon" },
+  { title: "React", Icon: "react-icon" },
+  { title: "Express.js", Icon: "expressjs-icon" },
+  { title: "Next.js", Icon: "nextjs-icon" },
+  { title: "Electron.js", Icon: "electronjs-icon" },
+  { title: "Tailwind", Icon: "tailwind-icon" },
+  { title: "Node.js", Icon: "nodejs-icon" },
+  { title: "HTML", Icon: "html-icon" },
+  { title: "CSS", Icon: "css-icon" },
+  { title: "SASS", Icon: "sass-icon" },
+  { title: "ESLint", Icon: "eslint-icon" },
+  { title: "Jest", Icon: "jest-icon" },
+  { title: "CRUD", Icon: "crud-icon" },
+];
 
 export default Skills;

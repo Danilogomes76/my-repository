@@ -1,14 +1,16 @@
+import { ElementType } from "react";
+
 interface SkillCardProps {
-  title: string;
-  technologies: string;
+  technologie: string;
+  Icon: ElementType;
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({ title, technologies }) => {
+const SkillCard: React.FC<SkillCardProps> = ({ technologie, Icon }) => {
   return (
-    <section className="lg:w-48 h-min  border-my_gray border text-my_white">
-      <p className="border-b border-my_gray p-2">{title}</p>
-      <p className="p-2">{technologies}</p>
-    </section>
+    <div className="flex flex-col items-center justify-center space-y-2">
+      <Icon className="h-10 w-10" />
+      <p className="text-sm font-medium">{technologie}</p>
+    </div>
   );
 };
 

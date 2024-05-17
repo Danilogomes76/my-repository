@@ -10,10 +10,12 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ width, height }) => {
   const { theme } = useTheme();
 
+  console.log(theme);
+
   return (
     <>
       <Image
-        src={theme == "light" ? "/logo_white.png" : "/logo_black.png"}
+        src={theme == "dark" ? "/logo_white.png" : "/logo_black.png"}
         width={width}
         height={height}
         alt="Danilo Gomes Logo Image"

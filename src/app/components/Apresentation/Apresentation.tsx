@@ -1,41 +1,31 @@
+import Image from "next/image";
 import Header from "../Header/Header";
 import { LinkedinIcon, GithubIcon, CurriculumIcon } from "../SVGS/Svgs";
 
 const Apresentation: React.FC = () => {
   return (
-    <section className="myGradient  w-full h-[890px]  gap-32 flex flex-col items-center">
-      <Header />
-      <section className="w-[64rem]">
-        <div>
-          <p className="text-my_white  text-base">OI 🖐️ EU SOU O DANILO</p>
-          <div className="text-my_white text-9xl font-bold">
-            <div className="text-my_white text-9xl font-bold flex items-center gap-10">
-              <p>FRONTEND</p>
-              <div className=" flex gap-5">
-                <LinkedinIcon
-                  fillHex="#B5AB99"
-                  className="w-9 h-9 hover:translate-y-[-8px] transition"
-                  href="https://www.linkedin.com/in/danilo-gomes76/"
-                />
-                <GithubIcon
-                  fillHex="#B5AB99"
-                  className="w-9 h-9 hover:translate-y-[-8px] transition"
-                  href="https://github.com/Danilogomes76/"
-                />
-                <CurriculumIcon
-                  fillHex="#B5AB99"
-                  className="w-9 h-9 hover:translate-y-[-8px] transition"
-                  href="https://www.calameo.com/read/0075673562034eaec4621"
-                />
-              </div>
-            </div>
-            DEVELOPER
-          </div>
+    <section className="w-full py-12 md:py-24 lg:py-32">
+      <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
+        <div className="space-y-4">
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+            Danilo Gomes
+          </h1>
+          <h2 className="text-2xl font-semibold text-gray-500 dark:text-gray-400">
+            Frontend Developer
+          </h2>
+          <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            Criando sites responsivos onde a tecnologia encontra a criatividade.
+          </p>
         </div>
-        <p className="text-my_white text-right ">
-          TENHO 20 ANOS, POSSUO 2 ANOS DE EXPÊRIENCIA COMO DESENVOLVEDOR
-        </p>
-      </section>
+
+        <Image
+          alt="Danilo Gomes Profile Image"
+          width={400}
+          height={400}
+          className="mx-auto bg-primary rounded-full"
+          src={"/dGomes.png"}
+        />
+      </div>
     </section>
   );
 };
