@@ -18,13 +18,12 @@ const Skills: React.FC = () => {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 py-12 sm:grid-cols-3 lg:grid-cols-4">
-          <SkillCard technologie="Typescript" Icon={ComponentIcon} />
           {technologies.map((technologie) => {
             return (
               <>
                 <SkillCard
                   technologie={technologie.title}
-                  Icon={ComponentIcon}
+                  icon={technologie.Icon}
                 />
               </>
             );
@@ -36,26 +35,26 @@ const Skills: React.FC = () => {
 };
 
 const technologies = [
-  { title: "Typescript", Icon: "typescript-icon" },
-  { title: "Javascript", Icon: "javascript-icon" },
-  { title: "MySQL", Icon: "mysql-icon" },
-  { title: "MongoDB", Icon: "mongodb-icon" },
-  { title: "Figma", Icon: "figma-icon" },
-  { title: "Linux", Icon: "linux-icon" },
-  { title: "VSCode", Icon: "vscode-icon" },
-  { title: "Git", Icon: "git-icon" },
-  { title: "React", Icon: "react-icon" },
-  { title: "Express.js", Icon: "expressjs-icon" },
-  { title: "Next.js", Icon: "nextjs-icon" },
-  { title: "Electron.js", Icon: "electronjs-icon" },
-  { title: "Tailwind", Icon: "tailwind-icon" },
-  { title: "Node.js", Icon: "nodejs-icon" },
-  { title: "HTML", Icon: "html-icon" },
-  { title: "CSS", Icon: "css-icon" },
-  { title: "SASS", Icon: "sass-icon" },
-  { title: "ESLint", Icon: "eslint-icon" },
-  { title: "Jest", Icon: "jest-icon" },
-  { title: "CRUD", Icon: "crud-icon" },
+  { title: "Typescript", Icon: "/assets/technologies/Typescript.svg" },
+  { title: "Javascript", Icon: "/assets/technologies/Javascript.svg" },
+  { title: "MySQL", Icon: "/assets/technologies/MySql.svg" },
+  { title: "MongoDB", Icon: "/assets/technologies/mongodb.svg" },
+  { title: "Figma", Icon: "/assets/technologies/figma.svg" },
+  { title: "Linux", Icon: "/assets/technologies/linux.svg" },
+  { title: "VSCode", Icon: "/assets/technologies/vscode.svg" },
+  { title: "Git", Icon: "/assets/technologies/git.svg" },
+  { title: "React", Icon: "/assets/technologies/react.svg" },
+  { title: "Express.js", Icon: "/assets/technologies/express.svg" },
+  { title: "Next.js", Icon: "/assets/technologies/next.svg" },
+  { title: "Electron.js", Icon: "/assets/technologies/electron.svg" },
+  { title: "Tailwind", Icon: "/assets/technologies/tailwind.svg" },
+  { title: "Node.js", Icon: "/assets/technologies/node.svg" },
+  { title: "HTML", Icon: "/assets/technologies/html.svg" },
+  { title: "CSS", Icon: "/assets/technologies/css.svg" },
+  { title: "SASS", Icon: "/assets/technologies/sass.svg" },
+  { title: "ESLint", Icon: "/assets/technologies/eslint.svg" },
+  { title: "Jest", Icon: "/assets/technologies/jest.svg" },
+  { title: "CRUD", Icon: "/assets/technologies/crud.svg" },
 ];
 
 export default Skills;
