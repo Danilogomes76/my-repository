@@ -72,8 +72,8 @@ const Projects: React.FC = () => {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
-          {projectsData.map((project) => {
-            return <ProjectsCard project={project} />;
+          {projectsData.map((project, index) => {
+            return <ProjectsCard key={index} project={project} />;
           })}
         </div>
       </div>
