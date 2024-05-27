@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Logo from "../Logo/Logo";
 
 const Footer: React.FC = () => {
   return (
@@ -20,14 +21,7 @@ const Footer: React.FC = () => {
         </section>
       </section>
       <section>
-        <Image
-          alt="logo"
-          width={100}
-          height={100}
-          src={"/daniloGomes.svg"}
-          className="w-20"
-          priority
-        ></Image>
+        <Logo height={100} width={100} />
       </section>
     </section>
   );

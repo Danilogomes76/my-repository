@@ -13,7 +13,7 @@ interface ProjectsCardProps extends React.HTMLProps<HTMLDivElement> {
 
 const ProjectsCard: React.FC<ProjectsCardProps> = ({ project }) => {
   return (
-    <Card className="">
+    <Card className="" data-aos="fade-up" data-aos-duration="500">
       <CardContent className="flex flex-col h-full items-start justify-between space-y-4 p-2">
         <div>
           <h3 className="text-xl font-bold">{project.projectTitle}</h3>
@@ -22,10 +22,10 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({ project }) => {
           </p>
         </div>
         <div className="flex items-center space-x-2 flex-wrap gap-1">
-          {project.technologies.map((technologie) => {
+          {project.technologies.map((technologie, index) => {
             return (
               <>
-                <Badge className="m-0" variant="secondary">
+                <Badge key={index} className="m-0" variant="secondary">
                   {technologie}
                 </Badge>
               </>

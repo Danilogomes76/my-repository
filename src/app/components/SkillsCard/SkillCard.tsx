@@ -8,7 +8,10 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({ technologie, icon }) => {
   return (
-    <div className="flex flex-col items-center justify-center space-y-2">
+    <div
+      data-aos="flip-left"
+      className="flex flex-col items-center justify-center space-y-2"
+    >
       <Image
         width={40}
         height={40}

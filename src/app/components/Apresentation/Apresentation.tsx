@@ -19,6 +19,7 @@ const Apresentation: React.FC = () => {
         </div>
 
         <Image
+          data-aos="fade-left"
           alt="Danilo Gomes Profile Image"
           width={400}
           height={400}
