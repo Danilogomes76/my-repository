@@ -44,9 +44,9 @@ const WorkCard: React.FC<WorkCardProps> = ({ work }) => {
   const { details, location, title, work_time, technologies } = work;
   return (
     <>
-      <Card data-aos="fade-up" data-aos-duration="500">
+      <Card className="w-full" data-aos="fade-up" data-aos-duration="500">
         <CardContent className="flex flex-col items-start justify-between space-y-4">
-          <div>
+          <div className="w-full">
             <h3 className="text-xl font-bold">{title}</h3>
             <p className="text-gray-500 dark:text-gray-400">{work_time}</p>
             <p className="line-clamp-3">{details}</p>
@@ -67,7 +67,7 @@ const WorkCard: React.FC<WorkCardProps> = ({ work }) => {
               </DialogContent>
             </Dialog>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center flex-wrap space-x-2">
             {technologies.map((item, index) => {
               return (
                 <>

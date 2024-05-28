@@ -24,7 +24,7 @@ const Works: React.FC<WorksProps> = () => {
               </p>
             </div>
           </div>
-          <div className="mx-auto grid max-w-5xl gap-6 py-12">
+          <div className="flex flex-col gap-6 mt-2">
             {works.map((work, index) => {
               return (
                 <>
