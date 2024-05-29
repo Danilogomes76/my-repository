@@ -1,3 +1,14 @@
+import {
+  Credenza,
+  CredenzaBody,
+  CredenzaClose,
+  CredenzaContent,
+  CredenzaDescription,
+  CredenzaFooter,
+  CredenzaHeader,
+  CredenzaTitle,
+  CredenzaTrigger,
+} from "@/components/custom/credenza";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -51,21 +62,24 @@ const WorkCard: React.FC<WorkCardProps> = ({ work }) => {
             <p className="text-gray-500 dark:text-gray-400">{work_time}</p>
             <p className="line-clamp-3">{details}</p>
 
-            <Dialog>
-              <DialogTrigger asChild>
-                <p className="text-blue-200">More Details...</p>
-              </DialogTrigger>
-              <DialogContent className="max-h-[80%] overflow-auto">
-                <DialogHeader>
-                  <DialogTitle>Details</DialogTitle>
-                  <DialogDescription>
-                    <pre className="whitespace-pre-wrap">
-                      {linkify(details)}
-                    </pre>
-                  </DialogDescription>
-                </DialogHeader>
-              </DialogContent>
-            </Dialog>
+            <Credenza>
+              <CredenzaTrigger asChild>
+                <p className=" text-blue-300  dark:text-blue-200">
+                  More Details...
+                </p>
+              </CredenzaTrigger>
+              <CredenzaContent className="max-h-[80%] lg:overflow-auto">
+                <CredenzaHeader>
+                  <CredenzaTitle>Details</CredenzaTitle>
+                  <CredenzaDescription>
+                    A responsive modal component for shadcn/ui.
+                  </CredenzaDescription>
+                </CredenzaHeader>
+                <CredenzaBody className="overflow-auto">
+                  <pre className="whitespace-pre-wrap">{linkify(details)}</pre>
+                </CredenzaBody>
+              </CredenzaContent>
+            </Credenza>
           </div>
           <div className="flex items-center flex-wrap space-x-2">
             {technologies.map((item, index) => {
