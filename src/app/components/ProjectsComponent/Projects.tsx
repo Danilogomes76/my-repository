@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
   const projectsData = [
     {
       description:
-        "Aplicação para organizar seus livros que consome a API Google Books.",
+        "Aplicação para organização de livros utilizando a API Google Books. Permite pesquisar, adicionar e gerenciar sua coleção de livros de forma fácil e intuitiva. Desenvolvido com foco em desempenho e usabilidade.",
       projectTitle: "Books Libry",
       technologies: ["Vite", "Axios", "Redux", "Stitches"],
       imgSrc: "https://book-organize.vercel.app/assets/book.c3651569.png",
