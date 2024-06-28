@@ -9,6 +9,7 @@ import Skills from "./components/Skills/Skills";
 import Works from "./components/Works/Works";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CanvasCursor from "@/components/custom/CanvasCursor/canvas-cursor";
 
 export default function Home() {
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function Home() {
       <Works />
       <AboutMe />
       <Footer />
+      <CanvasCursor />
     </main>
   );
 }
