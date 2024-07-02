@@ -26,11 +26,7 @@ const Works: React.FC<WorksProps> = () => {
           </div>
           <div className="flex flex-col gap-6 mt-2">
             {works.map((work, index) => {
-              return (
-                <>
-                  <WorkCard work={work} key={index} />
-                </>
-              );
+              return <WorkCard work={work} key={index} />;
             })}
           </div>
         </div>

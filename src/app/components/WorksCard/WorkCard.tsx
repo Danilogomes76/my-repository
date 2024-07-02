@@ -84,11 +84,9 @@ const WorkCard: React.FC<WorkCardProps> = ({ work }) => {
           <div className="flex items-center flex-wrap space-x-2">
             {technologies.map((item, index) => {
               return (
-                <>
-                  <Badge key={index} variant="secondary">
-                    {item}
-                  </Badge>
-                </>
+                <Badge key={index} variant="secondary">
+                  {item}
+                </Badge>
               );
             })}
           </div>

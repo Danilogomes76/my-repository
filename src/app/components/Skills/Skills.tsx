@@ -20,13 +20,11 @@ const Skills: React.FC = () => {
         <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 py-12 sm:grid-cols-3 lg:grid-cols-4">
           {technologies.map((technologie, index) => {
             return (
-              <>
-                <SkillCard
-                  key={index}
-                  technologie={technologie.title}
-                  icon={technologie.Icon}
-                />
-              </>
+              <SkillCard
+                key={index}
+                technologie={technologie.title}
+                icon={technologie.Icon}
+              />
             );
           })}
         </div>

@@ -41,15 +41,13 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-6">
           {navigation.map((item, index) => {
             return (
-              <>
-                <Link
-                  href={item.link}
-                  className="text-muted-foreground transition-colors hover:text-foreground"
-                  key={index}
-                >
-                  {item.name}
-                </Link>
-              </>
+              <Link
+                href={item.link}
+                className="text-muted-foreground transition-colors hover:text-foreground"
+                key={index}
+              >
+                {item.name}
+              </Link>
             );
           })}
 
@@ -70,7 +68,10 @@ const Header: React.FC = () => {
           </SheetTrigger>
           <ToggleTheme className="md:hidden" />
         </div>
-        <SheetContent className="flex flex-col justify-between" side="left">
+        <SheetContent
+          className="flex w-[80%] flex-col justify-between"
+          side="left"
+        >
           <nav className="grid gap-6 text-lg font-medium">
             <Link
               href="#"
@@ -81,15 +82,13 @@ const Header: React.FC = () => {
 
             {navigation.map((item, index) => {
               return (
-                <>
-                  <Link
-                    href={item.link}
-                    className="text-muted-foreground transition-colors hover:text-foreground"
-                    key={index}
-                  >
-                    {item.name}
-                  </Link>
-                </>
+                <Link
+                  href={item.link}
+                  className="text-muted-foreground transition-colors hover:text-foreground"
+                  key={index}
+                >
+                  {item.name}
+                </Link>
               );
             })}
           </nav>

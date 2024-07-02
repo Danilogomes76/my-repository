@@ -24,11 +24,9 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({ project }) => {
         <div className="flex items-center space-x-2 flex-wrap gap-1">
           {project.technologies.map((technologie, index) => {
             return (
-              <>
-                <Badge key={index} className="m-0" variant="secondary">
-                  {technologie}
-                </Badge>
-              </>
+              <Badge key={index} className="m-0" variant="secondary">
+                {technologie}
+              </Badge>
             );
           })}
         </div>
